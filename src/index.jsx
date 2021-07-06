@@ -108,7 +108,7 @@ function Clock() {
     setDate(new Date());
   }
 
-  useEffect(() => { setInterval(tick, 1000); });
+  useEffect(() => { setInterval(tick, 1000); }, []);
 
   return (
     <div>
@@ -122,4 +122,21 @@ ReactDOM.render(
   <Clock />,
   document.getElementById('root')
 );
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
